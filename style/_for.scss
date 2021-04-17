@@ -1,0 +1,93 @@
+.for {
+    max-width: 1160px;
+    margin: auto;
+    font-family: "Inter";
+
+    &__card {
+        display: block;
+        max-width: 558px;
+        height: 654px;
+        border: 1px solid #00e287;
+        box-sizing: border-box;
+        border-radius: 20px;
+        position: relative;
+        padding: 30px;
+
+        &_bliu {
+            border: 1px solid #3264ef;
+        }
+    }
+
+    &__card-body {
+        position: absolute;
+        left: 30px;
+        top: -40px;
+    }
+
+    &__card-body-img {
+    }
+
+    &__card-text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-top: 40px;
+    }
+
+    &__card-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 36px;
+        color: #ffffff;
+        margin-top: 10px;
+        &_mt {
+            margin-top: 30px;
+        }
+    }
+
+    &__card-list {
+        max-height: 300px;
+    }
+}
+
+.for-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.card-list {
+    display: table;
+
+    &__item {
+        margin-top: 30px;
+        list-style-position: inside;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+    }
+}
+.for-card {
+    &__list-star {
+        list-style: none;
+    }
+
+    &__list-star-item {
+        background: url("img/green\ star.png") no-repeat left center;
+        padding-left: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: rgba(255, 255, 255, 0.9);
+        margin-top: 20px;
+        &_bg {
+            background: url("img/bliu\ star.png") no-repeat left center;
+        }
+    }
+}
+
