@@ -1,7 +1,6 @@
 .advantages {
     max-width: 1160px;
     margin: auto;
-    font-family: "Inter";
 }
 
 .advantages-list {
@@ -115,10 +114,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .advantages {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
     .advantages-list {
         grid-gap: 10px;
         &__item {

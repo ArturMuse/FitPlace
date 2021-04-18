@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter";
 }
 
 body {
@@ -27,6 +28,26 @@ body {
     color: #ffffff;
     margin-bottom: 50px;
 }
+.wrapper {
+    position: relative;
+    &::before {
+        content: url("../img/wrapper-svg.svg");
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        z-index: -1;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+        &::before {
+            display: none;
+        }
+    }
+}
 @media screen and (max-width: 950px) {
     .title-m {
         font-size: 10px;
@@ -40,6 +61,8 @@ body {
         margin-bottom: 20px;
     }
 }
+@import "_header.scss";
+@import "_intro.scss";
 @import "_advantages.scss";
 @import "_for.scss";
 @import "_cost.scss";

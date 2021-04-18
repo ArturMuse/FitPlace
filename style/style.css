@@ -5,6 +5,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Inter";
 }
 
 body {
@@ -31,6 +32,29 @@ body {
   margin-bottom: 50px;
 }
 
+.wrapper {
+  position: relative;
+}
+
+.wrapper::before {
+  content: url("../img/wrapper-svg.svg");
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .wrapper::before {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .title-m {
     font-size: 10px;
@@ -45,10 +69,44 @@ body {
   }
 }
 
+.header {
+  max-width: 1160px;
+  margin: auto;
+  padding-top: 27px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding-top: 10px;
+  }
+}
+
+.intro {
+  max-width: 1160px;
+  margin: 80px auto auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro__body-title {
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 120%;
+  color: #ffffff;
+  width: 743px;
+}
+
+.intro__body-title span {
+  background: #65ff9d;
+  border-radius: 100px;
+  color: #000;
+  padding-bottom: 5px;
+}
+
 .advantages {
   max-width: 1160px;
   margin: auto;
-  font-family: "Inter";
 }
 
 .advantages-list {
@@ -204,10 +262,6 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  .advantages {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
   .advantages-list {
     grid-gap: 10px;
   }

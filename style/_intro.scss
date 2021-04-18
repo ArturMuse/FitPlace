@@ -1,0 +1,76 @@
+.intro {
+    max-width: 1160px;
+    margin: 80px auto auto auto;
+    display: flex;
+    &__body {
+    }
+
+    &__body-title {
+        font-weight: bold;
+        font-size: 54px;
+        line-height: 120%;
+        color: #ffffff;
+        width: 743px;
+        span {
+            background: #65ff9d;
+            border-radius: 100px;
+            color: #000;
+            padding-bottom: 5px;
+        }
+    }
+
+    &__body-wrap {
+    }
+
+    &__body-inner {
+    }
+
+    &__body-text {
+    }
+
+    &__body-link {
+    }
+
+    &__body-sale {
+    }
+
+    &__body-sale-m {
+    }
+
+    &__body-sale-l {
+    }
+
+    &__nav {
+    }
+
+    &__list {
+    }
+
+    &__list-item {
+        &_blue {
+        }
+
+        &_green {
+        }
+
+        &_orange {
+        }
+
+        &_pink {
+        }
+
+        &_yellow {
+        }
+
+        &_purple {
+        }
+    }
+
+    &__list-item-title {
+        &_big {
+        }
+
+        &_small {
+        }
+    }
+}
