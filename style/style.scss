@@ -51,7 +51,8 @@ body {
     .wrapper {
         padding-left: 10px;
         padding-right: 10px;
-        &::before {
+        &::before,
+        &::after {
             display: none;
         }
     }

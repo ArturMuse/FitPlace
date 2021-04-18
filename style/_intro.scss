@@ -2,7 +2,8 @@
     max-width: 1160px;
     margin: 80px auto auto auto;
     display: flex;
-    &__body {
+    &__menu {
+        display: none;
     }
 
     &__body-title {
@@ -10,7 +11,7 @@
         font-size: 54px;
         line-height: 120%;
         color: #ffffff;
-        width: 743px;
+        max-width: 743px;
         margin-bottom: 30px;
         span {
             background: #65ff9d;
@@ -69,10 +70,13 @@
         color: #ffffff;
         margin-top: 5px;
         &-wrap {
-            width: 290.76px;
+            min-width: 290.76px;
             height: 229.8px;
-            margin-left: 108px;
+            margin-left: auto;
             position: relative;
+            &_sm {
+                display: none;
+            }
             &::before {
                 content: url("../img/back-intro.svg");
                 display: block;
@@ -98,7 +102,8 @@
 
     &__nav {
         margin-left: 90px;
-        width: 316px;
+        min-width: 316px;
+        margin-top: 20px;
     }
 
     &__list {
@@ -180,6 +185,204 @@
             font-size: 12px;
             line-height: 130%;
             color: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .intro {
+        margin-top: 20px;
+        &__nav {
+            margin-left: 30px;
+        }
+        &__body {
+            &-title {
+                font-size: 48px;
+            }
+        }
+        &__list {
+            &-item {
+                &:hover {
+                    transform: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    @-webkit-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes slide-in-right {
+        0% {
+            -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    @keyframes slide-in-right {
+        0% {
+            -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .intro {
+        position: relative;
+        &__body {
+            margin: auto;
+        }
+        &__nav {
+            margin-left: 0;
+            margin-top: 0;
+            display: none;
+            width: 100%;
+            height: 100vh;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: rgba(35, 35, 35, 0.5);
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+                animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+            }
+            &-active {
+                display: block;
+                position: absolute;
+                right: 0;
+                z-index: 2;
+            }
+        }
+        &__list {
+            max-width: 320px;
+            margin-left: auto;
+            -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            &-item {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .intro {
+        &__nav {
+            &::before {
+                background-color: #232323;
+            }
+        }
+        &__body {
+            &-link {
+                margin-top: 25px;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 150%;
+                padding-left: 3px 3px 3px 20px;
+            }
+            &-sale {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 150%;
+                width: 118px;
+                height: 69px;
+                padding-top: 80px;
+                margin: 0;
+                margin-left: 40px;
+                &-l {
+                    font-size: 10px;
+                    line-height: 140%;
+                }
+                &-wrap {
+                    display: none;
+                    &_sm {
+                        display: block;
+                        min-width: auto;
+                        width: 219.1px;
+                        height: 141.24px;
+                        margin-left: 0;
+                    }
+                    svg {
+                        width: 42px;
+                        height: 42px;
+                        position: absolute;
+                        margin: 0;
+                        right: 10px;
+                        top: 10px;
+                    }
+                    &::before {
+                        content: url("../img/wrapper-back-sm.svg");
+                        top: 32px;
+                        left: 0px;
+                    }
+                }
+            }
+            &-title {
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 120%;
+                max-width: 100%;
+                margin-bottom: 13px;
+            }
+            &-text {
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 140%;
+                margin-bottom: 2px;
+                max-width: 207px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .intro {
+        &__nav {
+            padding-left: 0;
+            max-width: 100%;
+            right: auto;
+            left: 0;
+        }
+        &__list {
+            margin-left: 0;
+            width: 100%;
+            max-width: 100%;
+            &-item {
+                width: 100%;
+                &-link {
+                    padding: 10px;
+                }
+            }
         }
     }
 }

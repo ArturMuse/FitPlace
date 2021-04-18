@@ -2,15 +2,49 @@
     max-width: 1160px;
     margin: auto;
     padding-top: 27px;
-    &__logo {
-    }
-
-    &__logo-img {
+    &__menu {
+        display: none;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .header {
         padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 22px;
+            height: 17px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            &-line {
+                background: #3f3f3f;
+                border-radius: 10px;
+                display: block;
+                width: 100%;
+                height: 3px;
+                transition: all 0.3s ease;
+            }
+            &-active &-line_first {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            &-active &-line_middle {
+                opacity: 0;
+            }
+            &-active &-line_end {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+        }
     }
 }
