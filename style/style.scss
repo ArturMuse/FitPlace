@@ -38,6 +38,14 @@ body {
         display: block;
         z-index: -1;
     }
+    &::after {
+        content: url("../img/wrapper-aft.svg");
+        position: absolute;
+        left: 0;
+        top: 260px;
+        display: block;
+        z-index: -1;
+    }
 }
 @media screen and (max-width: 1200px) {
     .wrapper {
