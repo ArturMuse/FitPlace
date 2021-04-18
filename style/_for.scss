@@ -91,3 +91,62 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .for {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .for-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 940px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .for {
+        max-width: auto;
+        margin: auto;
+
+        &__card {
+            width: 300px;
+            min-height: 456px;
+            padding: 10px;
+        }
+
+        &__card-body {
+            left: 10px;
+            top: -20px;
+        }
+
+        &__card-text {
+            font-size: 10px;
+            line-height: 15px;
+            margin-top: 16px;
+        }
+
+        &__card-title {
+            font-size: 16px;
+            line-height: 21px;
+
+            margin-top: 8px;
+            &_mt {
+                margin-top: 0px;
+            }
+        }
+    }
+    &__item {
+        margin-top: 14px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+}
+.for-card {
+    &__list-star-item {
+        padding-left: 8px;
+        font-size: 12px;
+        line-height: 17px;
+        margin-top: 10px;
+    }
+}
