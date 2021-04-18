@@ -64,7 +64,7 @@ body {
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 700px) {
   .title-m {
     font-size: 10px;
     line-height: 15px;
@@ -131,10 +131,12 @@ body {
     width: 100%;
     height: 3px;
     -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
   .header__menu-active .header__menu-line_first {
     -webkit-transform: rotate(45deg) translate(5px, 5px);
+        -ms-transform: rotate(45deg) translate(5px, 5px);
             transform: rotate(45deg) translate(5px, 5px);
   }
   .header__menu-active .header__menu-line_middle {
@@ -142,6 +144,7 @@ body {
   }
   .header__menu-active .header__menu-line_end {
     -webkit-transform: rotate(-45deg) translate(5px, -5px);
+        -ms-transform: rotate(-45deg) translate(5px, -5px);
             transform: rotate(-45deg) translate(5px, -5px);
   }
 }
@@ -286,6 +289,7 @@ body {
   opacity: 0.3;
   -webkit-transition: opacity 0.2s ease-in, -webkit-transform 0.2s ease-in;
   transition: opacity 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  -o-transition: opacity 0.2s ease-in, transform 0.2s ease-in;
   transition: opacity 0.2s ease-in, transform 0.2s ease-in;
   transition: opacity 0.2s ease-in, transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
 }
@@ -303,6 +307,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  height: 60px;
 }
 
 .intro__list-item-link-svg {
@@ -349,6 +354,7 @@ body {
 .intro__list-item:hover {
   opacity: 1;
   -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
 
@@ -392,6 +398,7 @@ body {
   }
   .intro__list-item:hover {
     -webkit-transform: none;
+        -ms-transform: none;
             transform: none;
   }
 }
@@ -488,7 +495,7 @@ body {
     font-weight: 600;
     font-size: 12px;
     line-height: 150%;
-    padding-left: 3px 3px 3px 20px;
+    padding: 3px 3px 3px 20px;
   }
   .intro__body-sale {
     font-weight: 600;
@@ -563,9 +570,119 @@ body {
   }
 }
 
+.fast {
+  max-width: 1160px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fast__list {
+  list-style-type: none;
+  margin-right: 76px;
+  max-width: 403px;
+  width: 100%;
+}
+
+.fast__list-item {
+  margin-bottom: 50px;
+}
+
+.fast__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.fast__list-item-svg {
+  background: #2f2f2f;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fast__list-item-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.fast__list-item-p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.fast__link {
+  width: 100%;
+  max-width: 670px;
+}
+
+.fast__link-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .fast {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 40px;
+  }
+  .fast__link {
+    margin-top: 30px;
+  }
+  .fast__list {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .fast__list-item {
+    margin-bottom: 22px;
+  }
+  .fast__list-item-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 8px;
+  }
+  .fast__list-item-p {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 140%;
+  }
+  .fast__list-item-svg {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+  }
+  .fast__list-item:first-child .fast__list-item-svg svg {
+    width: 26px;
+    height: 26px;
+  }
+  .fast__list-item:last-child .fast__list-item-svg svg {
+    width: 22.28px;
+    height: 22.95px;
+  }
+}
+
 .about {
   margin: auto;
-  margin-top: 100px;
   max-width: 1160px;
 }
 
@@ -719,6 +836,7 @@ body {
     margin-top: 10px;
     font-size: 14px;
     line-height: 20px;
+    max-width: 100%;
   }
   .about-card_long {
     -webkit-box-orient: vertical;
