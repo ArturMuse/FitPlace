@@ -1,0 +1,222 @@
+.form {
+    max-width: 1160px;
+    margin: auto;
+    background: #3264ef;
+    border-radius: 20px;
+    margin-top: 85px;
+    padding: 30px 30px 24px 30px;
+    &__top {
+        padding-bottom: 26px;
+        margin-bottom: 26px;
+        border-bottom: 1px solid #fff;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__top-title {
+        display: flex;
+        align-items: center;
+        max-width: 500px;
+    }
+
+    &__top-title-pic {
+        margin-right: 20px;
+    }
+
+    &__top-title-pic-img {
+    }
+
+    &__top-title-text {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 130%;
+        color: #fff;
+    }
+
+    &__top-p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140%;
+        color: #ffffff;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__body-inner {
+        max-width: 630px;
+    }
+
+    &__body-actions {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    &__body-input {
+        padding: 15px 14px 16px 14px;
+        background: #5683ff;
+        border-radius: 5px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        border: none;
+        outline: none;
+        &::placeholder {
+            opacity: 1;
+        }
+    }
+
+    &__body-btn {
+        background: #232323;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__body-copy {
+        margin-top: 10px;
+        color: rgba(255, 255, 255, 0.4);
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    &__body-social {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    &__body-social-list {
+        display: flex;
+        justify-content: end;
+        list-style-type: none;
+    }
+
+    &__body-social-p {
+        margin-top: 14px;
+        color: rgba(255, 255, 255, 0.4);
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    &__body-social-list-item {
+        margin-left: 16px;
+    }
+
+    &__body-social-list-item-link {
+    }
+
+    &__body-social-list-item-img {
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .form {
+        &__top {
+            flex-direction: column;
+            &-p {
+                margin-top: 6px;
+                padding-left: 92px;
+            }
+        }
+        &__body {
+            flex-direction: column;
+            &-social {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                margin-top: 18px;
+                &-p {
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .form {
+        padding: 10px;
+        &__body {
+            &-input,
+            &-btn {
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+        &__top {
+            &-p {
+                padding-left: 52px;
+                font-size: 12px;
+                line-height: 140%;
+                max-width: 252px;
+            }
+            &-title {
+                &-text {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 130%;
+                    max-width: 232px;
+                }
+                &-pic {
+                    width: 40px;
+                    margin-right: 14px;
+                    &-img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .form {
+        &__body {
+            &-copy {
+                font-size: 12px;
+                line-height: 150%;
+            }
+            &-social {
+                align-items: center;
+                &-list {
+                    justify-content: center;
+                    &-item {
+                        margin-left: 12px;
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                    }
+                }
+                &-p {
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 150%;
+                }
+            }
+            &-btn {
+                padding-top: 15px;
+                padding-bottom: 16px;
+            }
+            &-actions {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+}

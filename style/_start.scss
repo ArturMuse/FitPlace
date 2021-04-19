@@ -4,11 +4,6 @@
     & .title-m {
         margin-bottom: 0;
     }
-    &__pic {
-    }
-
-    &__pic-img {
-    }
     &-title-inner {
         display: flex;
         justify-content: space-between;
@@ -36,12 +31,6 @@
             background: #3264ef;
             padding: 35px 54px 41px 44px;
         }
-    }
-
-    &__list-item-pic {
-    }
-
-    &__list-item-pic-img {
     }
 
     &__list-item-namber {
@@ -96,6 +85,16 @@
                 grid-template-columns: repeat(1, minmax(300px, 360px));
                 grid-gap: 10px;
                 &-item {
+                    padding: 10px;
+                    &_blue {
+                        padding: 33px 37px 37px 37px;
+                    }
+                    &_blue &-pic {
+                        width: 80px;
+                        height: 80px;
+                        margin: auto;
+                        margin-top: 14px;
+                    }
                     &-pic {
                         &-img {
                             width: 100%;
@@ -109,6 +108,9 @@
                     &-text {
                         font-size: 12px;
                         line-height: 17px;
+                        &_big {
+                            text-align: center;
+                        }
                     }
                 }
             }

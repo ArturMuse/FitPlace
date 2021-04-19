@@ -22,9 +22,12 @@
         position: absolute;
         left: 30px;
         top: -40px;
-    }
-
-    &__card-body-img {
+        width: 80px;
+        height: 80px;
+        &-img {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &__card-text {
@@ -50,22 +53,22 @@
     }
 
     &__card-list {
-        max-height: 300px;
+        padding-left: 20px;
     }
 }
 
 .for-inner {
     display: flex;
     justify-content: space-between;
+    margin-top: 90px;
 }
-.card-list {
-    display: table;
 
+.card-list {
     &__item {
         margin-top: 30px;
-        list-style-position: inside;
+        position: relative;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 18px;
         line-height: 25px;
         color: #ffffff;
@@ -77,76 +80,85 @@
     }
 
     &__list-star-item {
-        background: url("img/green\ star.png") no-repeat left center;
-        padding-left: 20px;
-        font-style: normal;
+        padding-left: 30px;
         font-weight: normal;
         font-size: 18px;
         line-height: 25px;
         color: rgba(255, 255, 255, 0.9);
         margin-top: 20px;
+        position: relative;
+        &::before {
+            content: "*";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 7px;
+            color: #5ac380;
+            font-size: 44px;
+        }
         &_bg {
-            background: url("img/bliu\ star.png") no-repeat left center;
+            &::before {
+                color: #3264ef;
+            }
         }
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .for {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
     .for-inner {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-height: 940px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .for__card {
+        height: auto;
     }
 }
 
-@media screen and (max-width: 950px) {
-    .for {
-        max-width: auto;
-        margin: auto;
-
-        &__card {
-            width: 300px;
-            min-height: 456px;
-            padding: 10px;
-        }
-
-        &__card-body {
-            left: 10px;
-            top: -20px;
-        }
-
-        &__card-text {
+@media screen and (max-width: 820px) {
+    .for-inner {
+        margin-top: 40px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    .for__card {
+        max-width: 100%;
+        padding: 36px 10px 20px 10px;
+        &-text {
+            margin-top: 0;
             font-size: 10px;
-            line-height: 15px;
-            margin-top: 16px;
+            line-height: 150%;
         }
-
-        &__card-title {
+        &-title {
             font-size: 16px;
-            line-height: 21px;
-
+            line-height: 130%;
             margin-top: 8px;
-            &_mt {
-                margin-top: 0px;
-            }
+        }
+        &-list {
+            margin-bottom: 15px;
         }
     }
-    &__item {
-        margin-top: 14px;
-        font-size: 12px;
-        line-height: 17px;
+    .for__card-body {
+        width: 40px;
+        height: 40px;
+        left: 20px;
+        top: -20px;
     }
-}
-.for-card {
-    &__list-star-item {
-        padding-left: 8px;
+    .card-list {
+        &__item {
+            font-size: 12px;
+            line-height: 140%;
+            margin-top: 15px;
+        }
+    }
+    .for-card__list-star-item {
         font-size: 12px;
-        line-height: 17px;
-        margin-top: 10px;
+        line-height: 140%;
+        margin-top: 8px;
+        padding-left: 15px;
+        &::before {
+            font-size: 24px;
+            top: 4px;
+        }
     }
 }

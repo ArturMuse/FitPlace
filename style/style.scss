@@ -57,7 +57,7 @@ body {
         }
     }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 820px) {
     .title-m {
         font-size: 10px;
         line-height: 15px;
@@ -74,7 +74,10 @@ body {
 @import "_intro.scss";
 @import "_fast.scss";
 @import "_about.scss";
+@import "_plus.scss";
 @import "_advantages.scss";
 @import "_start.scss";
 @import "_for.scss";
 @import "_cost.scss";
+@import "_form.scss";
+@import "_footer.scss";

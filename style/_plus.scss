@@ -1,0 +1,106 @@
+.plus {
+    max-width: 1160px;
+    margin: auto;
+    &__list {
+        max-width: 500px;
+        padding-left: 25px;
+        margin-top: 40px;
+        &-item {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 140%;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+    }
+    &__input {
+        display: none;
+    }
+    &__label {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 13px 30px 14px 30px;
+        cursor: pointer;
+        background-color: #2f2f2f;
+        border-radius: 100px;
+        margin-right: 10px;
+        &-wrap {
+            display: flex;
+            margin-bottom: 40px;
+        }
+    }
+    &__body {
+        display: none;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+}
+#list0:checked ~ .plus__label-wrap #list0label,
+#list1:checked ~ .plus__label-wrap #list1label,
+#list2:checked ~ .plus__label-wrap #list2label,
+#list3:checked ~ .plus__label-wrap #list3label,
+#list4:checked ~ .plus__label-wrap #list4label {
+    background-color: #3264ef;
+}
+
+#list0:checked ~ #plus-body0,
+#list1:checked ~ #plus-body1,
+#list2:checked ~ #plus-body2,
+#list3:checked ~ #plus-body3,
+#list4:checked ~ #plus-body4 {
+    display: flex;
+}
+
+@media screen and (max-width: 1010px) {
+    .plus {
+        &__list {
+            max-width: 100%;
+            margin-top: 0;
+            margin-bottom: 13px;
+        }
+        &__body {
+            flex-direction: column;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .plus {
+        &__label {
+            margin-right: 6px;
+            margin-bottom: 6px;
+            font-size: 10px;
+            line-height: 150%;
+            padding: 7px 13px 8px 13px;
+            &-wrap {
+                flex-wrap: wrap;
+                margin-bottom: 0;
+            }
+        }
+        &__list {
+            max-width: 100%;
+            margin-top: 0;
+            margin-bottom: 13px;
+            &-item {
+                font-size: 12px;
+                line-height: 140%;
+                margin-bottom: 12px;
+            }
+        }
+        &__body {
+            margin-top: 14px;
+        }
+        &__pic {
+            width: 100%;
+            &-img {
+                width: 100%;
+            }
+        }
+    }
+}

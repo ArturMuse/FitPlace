@@ -3,7 +3,9 @@
     margin: auto;
     font-family: "Inter";
     position: relative;
-
+    & .title-l {
+        margin-bottom: 20px;
+    }
     &__text {
         font-style: normal;
         font-weight: normal;
@@ -17,20 +19,12 @@
         top: 15px;
         right: 0;
     }
-
-    &__pic-img {
-    }
-}
-.title-m {
-}
-.title-l {
 }
 
 .cost-list {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-
     &__item {
         display: flex;
         background: #2f2f2f;
@@ -48,9 +42,6 @@
         width: 80px;
         height: 80px;
         margin: 17px;
-    }
-
-    &__item-pic-img {
     }
 
     &__item-inner {
@@ -75,42 +66,44 @@
         margin-top: 10px;
     }
 }
+
 @media screen and (max-width: 1200px) {
     .cost {
-        padding-left: 10px;
-        padding-right: 10px;
+        &-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            &__item {
+                width: auto;
+            }
+        }
     }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 930px) {
     .cost {
         max-width: auto;
         margin: auto;
-
+        & .title-l {
+            margin-bottom: 15px;
+        }
         &__text {
             font-size: 10px;
             line-height: 15px;
+            padding-right: 0;
         }
-
         &__pic {
-            top: 0px;
+            top: 0;
             right: 0;
+            width: 78px;
+            &-img {
+                width: 100%;
+            }
         }
-        &__pic-img {
-            max-width: 50%;
-            height: auto;
-        }
-
         .cost-list {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 138px;
             margin-top: 16px;
-
             &__item {
                 border-radius: 10px;
-                width: 300px;
                 height: 64px;
             }
 
@@ -142,6 +135,14 @@
                 line-height: 17px;
                 margin-top: 4px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .cost {
+        &-list {
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }
