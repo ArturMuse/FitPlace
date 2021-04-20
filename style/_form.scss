@@ -67,8 +67,10 @@
         color: #ffffff;
         border: none;
         outline: none;
+        appearance: none;
         &::placeholder {
             opacity: 1;
+            color: #fff;
         }
     }
 

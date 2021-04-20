@@ -133,31 +133,32 @@
                 align-items: center;
                 justify-content: center;
                 margin-right: 12px;
-                background: #4b4b4b;
+                background-color: #4b4b4b;
                 border-radius: 100px;
+                transition: background-color 0.2s ease-in;
             }
         }
-        &_blue &-link-svg {
+        &_blue:hover &-link-svg {
             background-color: #496aff;
         }
 
-        &_green &-link-svg {
+        &_green:hover &-link-svg {
             background-color: #00be71;
         }
 
-        &_orange &-link-svg {
+        &_orange:hover &-link-svg {
             background-color: #ff613e;
         }
 
-        &_pink &-link-svg {
+        &_pink:hover &-link-svg {
             background-color: #f32566;
         }
 
-        &_yellow &-link-svg {
+        &_yellow:hover &-link-svg {
             background-color: #ff8521;
         }
 
-        &_purple &-link-svg {
+        &_purple:hover &-link-svg {
             background-color: #6b53fd;
         }
         &:hover {

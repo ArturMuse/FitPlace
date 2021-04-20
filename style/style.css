@@ -323,31 +323,34 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 12px;
-  background: #4b4b4b;
+  background-color: #4b4b4b;
   border-radius: 100px;
+  -webkit-transition: background-color 0.2s ease-in;
+  -o-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
-.intro__list-item_blue .intro__list-item-link-svg {
+.intro__list-item_blue:hover .intro__list-item-link-svg {
   background-color: #496aff;
 }
 
-.intro__list-item_green .intro__list-item-link-svg {
+.intro__list-item_green:hover .intro__list-item-link-svg {
   background-color: #00be71;
 }
 
-.intro__list-item_orange .intro__list-item-link-svg {
+.intro__list-item_orange:hover .intro__list-item-link-svg {
   background-color: #ff613e;
 }
 
-.intro__list-item_pink .intro__list-item-link-svg {
+.intro__list-item_pink:hover .intro__list-item-link-svg {
   background-color: #f32566;
 }
 
-.intro__list-item_yellow .intro__list-item-link-svg {
+.intro__list-item_yellow:hover .intro__list-item-link-svg {
   background-color: #ff8521;
 }
 
-.intro__list-item_purple .intro__list-item-link-svg {
+.intro__list-item_purple:hover .intro__list-item-link-svg {
   background-color: #6b53fd;
 }
 
@@ -1801,22 +1804,29 @@ body {
   color: #ffffff;
   border: none;
   outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .form__body-input::-webkit-input-placeholder {
   opacity: 1;
+  color: #fff;
 }
 
 .form__body-input:-ms-input-placeholder {
   opacity: 1;
+  color: #fff;
 }
 
 .form__body-input::-ms-input-placeholder {
   opacity: 1;
+  color: #fff;
 }
 
 .form__body-input::placeholder {
   opacity: 1;
+  color: #fff;
 }
 
 .form__body-btn {
