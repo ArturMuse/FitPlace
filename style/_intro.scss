@@ -100,96 +100,9 @@
         line-height: 140%;
     }
 
-    &__nav {
-        margin-left: 90px;
-        min-width: 316px;
-        margin-top: 20px;
+    
     }
 
-    &__list {
-        list-style-type: none;
-    }
-
-    &__list-item {
-        background-color: #2f2f2f;
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        border-radius: 14px;
-        margin-bottom: 16px;
-        opacity: 0.3;
-        transition: opacity 0.2s ease-in, transform 0.2s ease-in;
-        &:last-child {
-            margin-bottom: 0;
-        }
-        &-link {
-            padding: 20px 12px 12px 15px;
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            height: 60px;
-            &-svg {
-                display: flex;
-                min-width: 30px;
-                height: 30px;
-                align-items: center;
-                justify-content: center;
-                margin-right: 12px;
-                background-color: #4b4b4b;
-                border-radius: 100px;
-                transition: background-color 0.2s ease-in;
-            }
-        }
-        &_blue:hover &-link-svg {
-            background-color: #496aff;
-        }
-
-        &_green:hover &-link-svg {
-            background-color: #00be71;
-        }
-
-        &_orange:hover &-link-svg {
-            background-color: #ff613e;
-        }
-
-        &_pink:hover &-link-svg {
-            background-color: #f32566;
-        }
-
-        &_yellow:hover &-link-svg {
-            background-color: #ff8521;
-        }
-
-        &_purple:hover &-link-svg {
-            background-color: #6b53fd;
-        }
-        &:hover {
-            opacity: 1;
-            transform: scale(1.1);
-        }
-    }
-
-    &__list-item-title {
-        display: flex;
-        flex-direction: column;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 150%;
-        letter-spacing: 0.01em;
-        text-transform: uppercase;
-        color: #ffffff;
-
-        &_big {
-            margin-bottom: 2px;
-        }
-
-        &_small {
-            text-transform: none;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 130%;
-            color: rgba(255, 255, 255, 0.5);
-        }
-    }
-}
 
 @media screen and (max-width: 1100px) {
     .intro {

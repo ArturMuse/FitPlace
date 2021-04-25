@@ -2,8 +2,40 @@
     max-width: 1160px;
     margin: auto;
     padding-top: 27px;
-    &__menu {
-        display: none;
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+   
+    &__list-item-title {
+        display: flex;
+                justify-content: flex-end;
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #ffffff;
+
+        &_big {
+            margin-bottom: 2px;
+            
+        }
+
+        &_small {
+            text-transform: none;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 130%;
+            color: rgba(255, 255, 255, 0.5);
+        }
     }
 }
 
