@@ -1,53 +1,71 @@
 .intro {
     max-width: 1160px;
     margin: 80px auto auto auto;
-    display: flex;
-    &__menu {
-        display: none;
+    &__body {
+        display: flex;
+        flex-direction: row;
+        margin-top: 117px;
+        &-img {
+            display: block;
+            z-index: -1;
+            margin-top: -157px;
+            margin-left: -157px;
+        }
     }
 
     &__body-title {
         font-weight: bold;
-        font-size: 54px;
-        line-height: 120%;
+        font-size: 40px;
+        line-height: 52px;
         color: #ffffff;
-        max-width: 743px;
-        margin-bottom: 30px;
-        span {
-            background: #65ff9d;
-            border-radius: 100px;
-            color: #000;
-            padding-bottom: 5px;
-        }
     }
 
     &__body-wrap {
         display: flex;
+        flex-direction: column;
+        width: 552px;
+        margin-left: -171px;
     }
 
     &__body-inner {
+        display: flex;
+        margin-top: 8px;
+    }
+    &__body-left {
+        display: block;
+    }
+    &__body-right {
+        display: block;
+        width: 148px;
+        height: 148px;
+        background: #161616;
+        border: 1px solid #3264ef;
+        border-radius: 100%;
+        box-sizing: border-box;
+        margin-left: 96px;
+        margin-top: 8px;
+        margin-bottom: 0;
     }
 
     &__body-text {
         font-weight: normal;
-        font-size: 20px;
-        line-height: 140%;
+        font-size: 16px;
+        line-height: 22px;
         color: #ffffff;
-        margin-bottom: 55px;
-        max-width: 348px;
+        margin-top: 12px;
     }
 
     &__body-link {
         background-color: #3264ef;
-        border-radius: 100px;
+        border-radius: 5px;
         display: flex;
+        margin-top: 46px;
         align-items: center;
-        justify-content: space-between;
-        max-width: 289px;
+        max-width: 232px;
         padding: 8px 8px 8px 30px;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 150%;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
         letter-spacing: 0.01em;
         text-transform: uppercase;
         color: #ffffff;
@@ -55,61 +73,38 @@
     }
 
     &__body-sale {
-        width: 118px;
-        height: 128px;
+        width: 148px;
+        height: 148px;
         margin: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 150%;
-        text-align: center;
-        text-transform: uppercase;
-        color: #ffffff;
-        margin-top: 5px;
-        &-wrap {
-            min-width: 290.76px;
-            height: 229.8px;
-            margin-left: auto;
-            position: relative;
-            &_sm {
-                display: none;
-            }
-            &::before {
-                content: url("../img/back-intro.svg");
-                display: block;
-                position: absolute;
-                top: 50px;
-            }
-            svg {
-                margin-left: auto;
-                display: block;
-                margin-right: 18px;
-            }
-        }
     }
 
     &__body-sale-m {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
     }
 
     &__body-sale-l {
         font-weight: 500;
-        font-size: 12px;
-        line-height: 140%;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
     }
-
-    
-    }
-
+}
 
 @media screen and (max-width: 1100px) {
     .intro {
         margin-top: 20px;
-        &__nav {
-            margin-left: 30px;
-        }
+
         &__body {
             &-title {
                 font-size: 48px;
