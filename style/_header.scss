@@ -2,8 +2,47 @@
     max-width: 1160px;
     margin: auto;
     padding-top: 27px;
-    &__menu {
-        display: none;
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        display: flex;
+        width: 705px;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        text-decoration: none;
+
+        &-item {
+            &-link {
+                &-svg {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__list-item-title {
+        display: flex;
+        text-decoration: none;
+        border: none;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #ffffff;
+
+        &_big {
+            margin-bottom: 2px;
+            text-decoration: none;
+            border: none;
+        }
+
+        &_small {
+            display: none;
+            text-decoration: none;
+        }
     }
 }
 
