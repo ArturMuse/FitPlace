@@ -30,31 +30,16 @@ body {
 }
 .wrapper {
     position: relative;
-    &::before {
-        content: url("../img/wrapper-svg.svg");
-        position: absolute;
-        right: 0;
-        top: 0;
-        display: none;
-        z-index: -1;
-    }
-    &::after {
-        content: url("../img/wrapper-aft.svg");
-        position: absolute;
-        left: 0;
-        top: 260px;
-        display: none;
-        z-index: -1;
+    max-width: 1400px;
+    margin: auto;
+    &-off {
+        overflow: hidden;
     }
 }
 @media screen and (max-width: 1200px) {
     .wrapper {
         padding-left: 10px;
         padding-right: 10px;
-        &::before,
-        &::after {
-            display: none;
-        }
     }
 }
 @media screen and (max-width: 820px) {

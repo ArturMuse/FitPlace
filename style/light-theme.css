@@ -1,0 +1,194 @@
+body {
+  background: #f1f6f9;
+}
+
+.header__list-item-title {
+  color: #737b7d;
+}
+
+.header__nav-burger span {
+  background: #cdd7da;
+}
+
+@media screen and (max-width: 890px) {
+  .header__list {
+    background: #f1f6f9;
+  }
+  .header__list-item-link {
+    background: #fbfcfd;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .header__list-item-title_big {
+    color: #373f41;
+  }
+  .header__list-item-title_small {
+    color: #737b7d;
+  }
+}
+
+.intro__body-title {
+  color: #373f41;
+}
+
+.intro__body-text {
+  color: #737b7d;
+}
+
+.intro__body-right {
+  background: #fbfcfd;
+  border: none;
+}
+
+.intro__body-sale-m, .intro__body-sale-l {
+  color: #373f41;
+}
+
+.title-m {
+  color: #737b7d;
+}
+
+.title-l {
+  color: #373f41;
+}
+
+.fast__list-item-svg {
+  background: #fbfcfd;
+  -webkit-box-shadow: 5px 8px 30px rgba(196, 205, 213, 0.3);
+          box-shadow: 5px 8px 30px rgba(196, 205, 213, 0.3);
+}
+
+.fast__list-item-title {
+  color: #373f41;
+}
+
+.fast__list-item-p {
+  color: #737b7d;
+}
+
+.about-card {
+  background: #fbfcfd;
+}
+
+.about-card__title {
+  color: #373f41;
+}
+
+.about-card__subtitle {
+  color: #373f41;
+}
+
+.about-card__subtitle-mark {
+  background: none;
+}
+
+.about-card__list-item {
+  color: #737b7d;
+}
+
+.about-card_blue {
+  background: #3264ef;
+}
+
+.plus__label {
+  background: #fbfcfd;
+  color: #737b7d;
+}
+
+.plus__list-item {
+  color: #737b7d;
+}
+
+#list0:checked ~ .plus__label-wrap #list0label,
+#list1:checked ~ .plus__label-wrap #list1label,
+#list2:checked ~ .plus__label-wrap #list2label,
+#list3:checked ~ .plus__label-wrap #list3label,
+#list4:checked ~ .plus__label-wrap #list4label {
+  color: #fff;
+  background: #3264ef;
+}
+
+.advantages-list__item {
+  background: #fbfcfd;
+}
+
+.advantages-list__item-num {
+  color: #373f41;
+  border-color: #373f41;
+}
+
+.advantages-list__item-title {
+  color: #373f41;
+}
+
+.advantages-list__item-text {
+  color: #737b7d;
+  border-color: #737b7d;
+}
+
+.start-card__list-item {
+  background: #fbfcfd;
+}
+
+.start-card__list-item-namber {
+  color: #373f41;
+}
+
+.start-card__list-item-text {
+  color: #737b7d;
+}
+
+.for__card {
+  background: #ffffff;
+  border: none;
+}
+
+.for__card-text {
+  color: #737b7d;
+}
+
+.for__card-title {
+  color: #373f41;
+}
+
+.for__card-list .card-list__item {
+  color: #737b7d;
+}
+
+.for-card__list-star-item {
+  color: #737b7d;
+}
+
+.cost__text {
+  color: #737b7d;
+}
+
+.cost-list__item {
+  background: #fbfcfd;
+}
+
+.cost-list__item-pic {
+  background: #f1f6f9;
+}
+
+.cost-list__item-title {
+  color: #373f41;
+}
+
+.cost-list__item-text {
+  color: #737b7d;
+}
+
+.footer {
+  background: #fbfcfd;
+}
+
+.footer__p {
+  color: #737b7d;
+}
+
+.footer__body-list-item-link {
+  color: #737b7d;
+}
+/*# sourceMappingURL=light-theme.css.map */

@@ -1,8 +1,10 @@
 // Menu
-const menu = document.querySelector(".intro__nav")
-const menuBtn = document.querySelector(".header__menu")
+const menu = document.querySelector(".header__list")
+const menuBtn = document.querySelector(".header__nav-burger")
+const wrapper = document.querySelector('body')
 
 menuBtn.addEventListener("click", () => {
-    menu.classList.toggle("intro__nav-active")
-    menuBtn.classList.toggle("header__menu-active")
+    menu.classList.toggle("header__list-open")
+    menuBtn.classList.toggle("header__nav-burger-open")
+    wrapper.classList.toggle("wrapper-off")
 })

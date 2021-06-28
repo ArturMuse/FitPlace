@@ -1,0 +1,217 @@
+body {
+    background: #f1f6f9;
+}
+.header {
+    &__list {
+        &-item {
+            &-title {
+                color: #737b7d;
+            }
+        }
+    }
+    &__nav {
+        &-burger {
+            span {
+                background: #cdd7da;
+            }
+        }
+    }
+}
+@media screen and (max-width: 890px) {
+    .header {
+        &__list {
+            background: #f1f6f9;
+            &-item {
+                &-link {
+                    background: #fbfcfd;
+                    border: 1px solid rgba(255, 255, 255, 0.05);
+                    box-shadow: none;
+                }
+                &-title {
+                    &_big {
+                        color: #373f41;
+                    }
+                    &_small {
+                        color: #737b7d;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.intro {
+    &__body {
+        &-title {
+            color: #373f41;
+        }
+        &-text {
+            color: #737b7d;
+        }
+        &-right {
+            background: #fbfcfd;
+            border: none;
+        }
+        &-sale {
+            &-m,
+            &-l {
+                color: #373f41;
+            }
+        }
+    }
+}
+.title-m {
+    color: #737b7d;
+}
+.title-l {
+    color: #373f41;
+}
+.fast {
+    &__list {
+        &-item {
+            &-svg {
+                background: #fbfcfd;
+                box-shadow: 5px 8px 30px rgba(196, 205, 213, 0.3);
+            }
+            &-title {
+                color: #373f41;
+            }
+            &-p {
+                color: #737b7d;
+            }
+        }
+    }
+}
+
+.about {
+    &-card {
+        background: #fbfcfd;
+        &__title {
+            color: #373f41;
+        }
+        &__subtitle {
+            color: #373f41;
+            &-mark {
+                background: none;
+            }
+        }
+        &__list {
+            &-item {
+                color: #737b7d;
+                &-mark {
+                }
+            }
+        }
+        &_blue {
+            background: #3264ef;
+        }
+    }
+}
+
+.plus {
+    &__label {
+        background: #fbfcfd;
+        color: #737b7d;
+    }
+    &__list {
+        &-item {
+            color: #737b7d;
+        }
+    }
+}
+#list0:checked ~ .plus__label-wrap #list0label,
+#list1:checked ~ .plus__label-wrap #list1label,
+#list2:checked ~ .plus__label-wrap #list2label,
+#list3:checked ~ .plus__label-wrap #list3label,
+#list4:checked ~ .plus__label-wrap #list4label {
+    color: #fff;
+    background: #3264ef;
+}
+
+.advantages {
+    &-list {
+        &__item {
+            background: #fbfcfd;
+            &-num {
+                color: #373f41;
+                border-color: #373f41;
+            }
+            &-title {
+                color: #373f41;
+            }
+            &-text {
+                color: #737b7d;
+                border-color: #737b7d;
+            }
+        }
+    }
+}
+.start {
+    &-card {
+        &__list {
+            &-item {
+                background: #fbfcfd;
+                &-namber {
+                    color: #373f41;
+                }
+                &-text {
+                    color: #737b7d;
+                }
+            }
+        }
+    }
+}
+.for {
+    &__card {
+        background: #ffffff;
+        border: none;
+        &-text {
+            color: #737b7d;
+        }
+        &-title {
+            color: #373f41;
+        }
+        &-list {
+            & .card-list__item {
+                color: #737b7d;
+            }
+        }
+    }
+    &-card {
+        &__list {
+            &-star {
+                &-item {
+                    color: #737b7d;
+                }
+            }
+        }
+    }
+}
+.cost {
+    &__text {
+        color: #737b7d;
+    }
+    &-list {
+        &__item {
+            background: #fbfcfd;
+            &-pic {
+                background: #f1f6f9;
+            }
+            &-title {
+                color: #373f41;
+            }
+            &-text {
+                color: #737b7d;
+            }
+        }
+    }
+}
+.footer {
+    background: #fbfcfd;
+    &__p {
+        color: #737b7d;
+    }
+}
+.footer__body-list-item-link {
+    color: #737b7d;
+}

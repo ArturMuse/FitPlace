@@ -71,6 +71,9 @@
         margin-bottom: 30px;
         padding-left: 48px;
         position: relative;
+        &-mark {
+            font-weight: 700;
+        }
         &::before {
             content: "*";
             display: block;

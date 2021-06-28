@@ -5,11 +5,13 @@
         display: flex;
         flex-direction: row;
         margin-top: 117px;
+        justify-content: flex-end;
         &-img {
-            display: block;
-            z-index: -1;
-            margin-top: -187px;
-            margin-left: -157px;
+            max-width: 605px;
+            max-height: 440px;
+            &_mobile {
+                display: none;
+            }
         }
     }
 
@@ -24,7 +26,6 @@
         display: flex;
         flex-direction: column;
         width: 552px;
-        margin-left: -171px;
     }
 
     &__body-inner {
@@ -58,18 +59,18 @@
     &__body-link {
         background-color: #3264ef;
         border-radius: 5px;
-        display: flex;
         margin-top: 46px;
-        align-items: center;
         max-width: 232px;
-        padding: 8px 8px 8px 30px;
+        padding: 14px 30px 15px 25px;
         font-weight: 500;
         font-size: 14px;
+        display: block;
         line-height: 21px;
         letter-spacing: 0.01em;
         text-transform: uppercase;
         color: #ffffff;
         text-decoration: none;
+        text-align: center;
     }
 
     &__body-sale {
@@ -101,6 +102,46 @@
     }
 }
 
+@media screen and (max-width: 1350px) {
+    .intro {
+        &__body {
+            flex-direction: column-reverse;
+            &-inner {
+                position: relative;
+            }
+            &-wrap {
+                width: 100%;
+            }
+            &-img {
+                display: none;
+                &_mobile {
+                    display: block;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .intro {
+        margin-top: 20px;
+
+        &__body {
+            &-title {
+                font-size: 48px;
+            }
+        }
+        &__list {
+            &-item {
+                &:hover {
+                    transform: none;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1100px) {
     .intro {
         margin-top: 20px;
@@ -121,140 +162,46 @@
 }
 
 @media screen and (max-width: 1000px) {
-    @-webkit-keyframes fade-in {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    @keyframes fade-in {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
-    @-webkit-keyframes slide-in-right {
-        0% {
-            -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
-            opacity: 0;
-        }
-        100% {
-            -webkit-transform: translateX(0);
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-    @keyframes slide-in-right {
-        0% {
-            -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
-            opacity: 0;
-        }
-        100% {
-            -webkit-transform: translateX(0);
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-
     .intro {
         position: relative;
         &__body {
             margin: auto;
-        }
-        &__nav {
-            margin-left: 0;
-            margin-top: 0;
-            display: none;
-            width: 100%;
-            height: 100vh;
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
-                background-color: rgba(35, 35, 35, 0.5);
-                width: 100%;
-                height: 100%;
-                opacity: 1;
-                -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-                animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-            }
-            &-active {
-                display: block;
-                position: absolute;
-                right: 0;
-                z-index: 2;
-            }
-        }
-        &__list {
-            max-width: 320px;
-            margin-left: auto;
-            -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-            animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-            &-item {
-                opacity: 1;
-            }
         }
     }
 }
 
 @media screen and (max-width: 700px) {
     .intro {
-        &__nav {
-            &::before {
-                background-color: #232323;
-            }
-        }
         &__body {
             &-link {
                 margin-top: 25px;
                 font-weight: 600;
                 font-size: 12px;
                 line-height: 150%;
-                padding: 3px 3px 3px 20px;
+                text-align: center;
+            }
+            &-right {
+                position: absolute;
+                right: 0;
+                margin: 0;
+                width: 98px;
+                height: 98px;
+                top: 20px;
             }
             &-sale {
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 150%;
-                width: 118px;
-                height: 69px;
-                padding-top: 80px;
-                margin: 0;
-                margin-left: 40px;
-                &-l {
-                    font-size: 10px;
-                    line-height: 140%;
+                width: 98px;
+                height: 98px;
+                &-m {
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 150%;
+                    color: #ffffff;
                 }
-                &-wrap {
-                    display: none;
-                    &_sm {
-                        display: block;
-                        min-width: auto;
-                        width: 219.1px;
-                        height: 141.24px;
-                        margin-left: 0;
-                    }
-                    svg {
-                        width: 42px;
-                        height: 42px;
-                        position: absolute;
-                        margin: 0;
-                        right: 10px;
-                        top: 10px;
-                    }
-                    &::before {
-                        content: url("../img/wrapper-back-sm.svg");
-                        top: 32px;
-                        left: 0px;
-                    }
+                &-l {
+                    font-weight: 500;
+                    font-size: 7.8px;
+                    line-height: 140%;
+                    color: #ffffff;
                 }
             }
             &-title {
